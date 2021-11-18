@@ -23,8 +23,10 @@
     src: local("Poppins-Bold"),  url("./fonts/Poppins-Bold.ttf") format("truetype");
 }
 
-.App {
+.content {
     font-family: "Poppins";
     font-size: 14px;
+    color: var(--white);
+    background: linear-gradient( to right, var(--green), var(--darkblue));
 }
 
