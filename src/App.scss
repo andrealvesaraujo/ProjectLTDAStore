@@ -58,9 +58,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 
 .content .container-image img{
     width: 30rem;
+}
+
+.content main h2{
+    font-family: "Poppins-Bold";
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.content main h1{
+    font-family: "Poppins-Bold";
+    font-weight: 900;
+    font-size: 5.6rem;
+    line-height: 6.1rem;
+}
+
+.content main p {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
 }

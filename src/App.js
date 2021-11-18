@@ -32,8 +32,8 @@ function App() {
           Aqueles que a desobedecem são transformados em animais.
         </p>
         <div>
-          <button>Assistir agora</button>
-          <button>Assista o trailer</button>
+          <button className="container-primary">Assistir agora</button>
+          <button className="container-outline">Assista o trailer</button>
         </div>
       </main>
     </div>
