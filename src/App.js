@@ -1,18 +1,25 @@
+import React from "react"
 import './fonts/Poppins-Regular.ttf';
 import './fonts/Poppins-Medium.ttf';
 import './fonts/Poppins-Black.ttf';
 import './fonts/Poppins-SemiBold.ttf';
 import './fonts/Poppins-Bold.ttf';
 import './App.scss';
-import React from "react"
-import logo from "./img/logo.svg"
+import Logo from "./img/logo.svg"
+import Ilustracao from "./img/ilustracao.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faYoutube, faInstagram , faTwitter} from "@fortawesome/free-brands-svg-icons"
 
 function App() {
   return (
     <div className="content">
       <header>
-        <img src={logo} alt="Logo"></img>
+        <img src={Logo} alt="Logo"></img>
         <nav>
+          <FontAwesomeIcon icon={faFacebookF} />
+          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faYoutube} />
         </nav>
       </header>
       <main>
