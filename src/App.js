@@ -16,10 +16,10 @@ function App() {
       <header>
         <img src={Logo} alt="Logo"></img>
         <nav>
-          <FontAwesomeIcon icon={faFacebookF} />
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faYoutube} />
+          <FontAwesomeIcon className="icon" icon={faFacebookF} />
+          <FontAwesomeIcon className="icon" icon={faInstagram} />
+          <FontAwesomeIcon className="icon" icon={faTwitter} />
+          <FontAwesomeIcon className="icon" icon={faYoutube} />
         </nav>
       </header>
       <main>

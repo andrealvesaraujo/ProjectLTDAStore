@@ -25,8 +25,31 @@
 
 .content {
     font-family: "Poppins";
-    font-size: 14px;
+    padding: 3rem 2.5rem;
+    font-size: 1.4rem;
     color: var(--white);
     background: linear-gradient( to right, var(--green), var(--darkblue));
 }
 
+.content header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.5rem;
+}
+
+.content header img{
+    width: 10rem;
+    height: 5rem;
+}
+
+.content header nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.5;
+}
+
+.content header nav .icon{
+    width: 2rem;
+    height: 2rem;
+}
