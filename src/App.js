@@ -22,21 +22,26 @@ function App() {
           <a href="/" alt="Youtube" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon className="icon" icon={faYoutube} /></a>
         </nav>
       </header>
-      <div className="container-image">
+      <div className="image-mobile">
         <img src={Fantasmas} alt="Fantasmas do Filme" />
       </div>
-      <main>
-        <h2>HAYAO MIYAZAKI</h2>
-        <h1>A VIAGEM DE <br /> CHIHIRO</h1>
-        <p>Chihiro chega a um mundo mágico dominado por <br />
-          uma bruxa. Aqueles que a desobedecem são <br />
-          transformados em animais.
-        </p>
-        <div>
-          <button className="container-primary">Assistir agora</button>
-          <button className="container-outline">Assista o trailer</button>
+      <div className="container" >
+        <main>
+          <h2>HAYAO MIYAZAKI</h2>
+          <h1>A VIAGEM DE <br /> CHIHIRO</h1>
+          <p>Chihiro chega a um mundo mágico dominado por <br />
+            uma bruxa. Aqueles que a desobedecem são <br />
+            transformados em animais.
+          </p>
+          <div>
+            <button className="container-primary">Assistir agora</button>
+            <button className="container-outline">Assista o trailer</button>
+          </div>
+        </main>
+        <div className="image-desktop">
+          <img src={Fantasmas} alt="Fantasmas do Filme" />
         </div>
-      </main>
+      </div>
     </div>
   );
 }
