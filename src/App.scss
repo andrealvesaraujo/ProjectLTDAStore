@@ -70,6 +70,8 @@
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.7rem;
+    margin-bottom: .6rem;
+
 }
 
 .content main h1{
@@ -97,11 +99,57 @@
 }
 
 .content main div .container-outline{
+    font-family: "Poppins";
+    background-color: transparent;
+    padding: 1rem 3.3rem;
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    color: var(--white);    
     display: none;
+    border: .2rem solid var(--buttonPrimary);
 }
 
 @media (min-width: 600px){
     .content {
         padding: 3rem 10rem;
+    }
+}
+
+@media (min-width: 768px){
+    .content {
+        padding: 5.2rem 18rem;
+    }
+
+    .content header nav {
+        width: 18.3rem;
+    }
+
+    .content header nav .icon{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .content main h2{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1.4rem;
+    }
+    
+    .content main h1{
+        font-size: 6.8rem;
+        line-height: 7.4rem;
+    }
+    
+    .content main p {
+        font-family: "Poppins";
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+        margin-top: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .content main div .container-outline{
+        display: inline;
+        margin-left: 1rem;
     }
 }
