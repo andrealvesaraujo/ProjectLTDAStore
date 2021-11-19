@@ -28,7 +28,8 @@
     padding: 3rem 2.5rem;
     font-size: 1.4rem;
     color: var(--white);
-    background: linear-gradient( to right, var(--green), var(--darkblue));
+    background: linear-gradient(154.76deg, var(--green), var(--darkblue));
+    min-height: 100vh;
 }
 
 .content header {
@@ -46,7 +47,7 @@
 .content header nav {
     display: flex;
     justify-content: space-between;
-    flex: 0.5;
+    width: 15.5rem;
 }
 
 .content header nav .icon{
@@ -84,4 +85,23 @@
     line-height: 2.5rem;
     margin-top: 1.5rem;
     margin-bottom: 6rem;
+}
+
+.content main div .container-primary{
+    font-family: "Poppins";
+    background-color: var(--buttonPrimary);
+    padding: 1rem 3.3rem;
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    color: var(--white);    
+}
+
+.content main div .container-outline{
+    display: none;
+}
+
+@media (min-width: 600px){
+    .content {
+        padding: 3rem 10rem;
+    }
 }

@@ -27,9 +27,10 @@ function App() {
       </div>
       <main>
         <h2>HAYAO MIYAZAKI</h2>
-        <h1>A VIAGEM DE CHIHIRO</h1>
-        <p>Chihiro chega a um mundo mágico dominado por uma bruxa. 
-          Aqueles que a desobedecem são transformados em animais.
+        <h1>A VIAGEM DE <br /> CHIHIRO</h1>
+        <p>Chihiro chega a um mundo mágico dominado por <br />
+          uma bruxa. Aqueles que a desobedecem são <br />
+          transformados em animais.
         </p>
         <div>
           <button className="container-primary">Assistir agora</button>
