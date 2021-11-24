@@ -58,6 +58,12 @@
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.content header nav .icon:hover{
+    transition: all 1s;
+    opacity: 0.5;
 }
 
 .content .image-mobile {
@@ -106,6 +112,18 @@
     font-size: 1.6rem;
     line-height: 2.9rem;
     color: var(--white);    
+    cursor: pointer;
+    border: 0.2rem solid var(--buttonPrimary);
+    transition: all 1s;
+}
+
+.content main div .container-primary:hover{
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+.content main div .container-primary .icon-button{
+    margin-right: 1rem;
 }
 
 .content main div .container-outline{
@@ -117,6 +135,13 @@
     color: var(--white);    
     display: none;
     border: .2rem solid var(--buttonPrimary);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.content main div .container-outline:hover{
+    transition: all 1s;
+    opacity: 0.5;
 }
 
 @media (min-width: 600px){
@@ -158,6 +183,7 @@
 
     .content .image-desktop img{
         width: 55rem;
+        height: 50rem;
     }
 
     .content .image-mobile{
@@ -185,7 +211,8 @@
 
     .content main div .container-outline{
         display: inline;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        transition: all 1s;
     }
 
 }

@@ -9,6 +9,7 @@ import Logo from "./img/logo.svg"
 import Fantasmas from "./img/fantasmas.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faYoutube, faInstagram , faTwitter} from "@fortawesome/free-brands-svg-icons"
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             transformados em animais.
           </p>
           <div>
-            <button className="container-primary">Assistir agora</button>
+            <button className="container-primary"><FontAwesomeIcon className="icon-button" icon={faPlay} /> Assistir agora</button>
             <button className="container-outline">Assista o trailer</button>
           </div>
         </main>
