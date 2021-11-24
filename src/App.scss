@@ -32,18 +32,23 @@
     color: var(--white);
     background: linear-gradient(154.76deg, var(--green), var(--darkblue));
     min-height: 100vh;
+    background-image: url(./img/team.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content header {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5.5rem;
 }
 
 .content header img{
     width: 10rem;
-    height: 5rem;
+    height: 8rem;
+    border-radius: 100%;
 }
 
 .content header nav {
@@ -54,18 +59,22 @@
 
 .content header nav a{
     color: #fff;
+    border: 1px solid #fff;
+    padding: .5rem;
+    border-radius: 3rem;
+    display: flex;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.content header nav a:hover{
+    transition: all 1s;
+    opacity: 0.5;
 }
 
 .content header nav .icon{
     width: 2rem;
     height: 2rem;
-    cursor: pointer;
-    transition: all 1s;
-}
-
-.content header nav .icon:hover{
-    transition: all 1s;
-    opacity: 0.5;
 }
 
 .content .image-mobile {
@@ -113,15 +122,16 @@
     padding: 1rem 3.3rem;
     font-size: 1.6rem;
     line-height: 2.9rem;
-    color: var(--white);    
+    color: #ffffff;    
     cursor: pointer;
     border: 0.2rem solid var(--buttonPrimary);
     transition: all 1s;
+    border-radius: 1rem;
 }
 
 .content main div .container-primary:hover{
     transition: all 1s;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .content main div .container-primary .icon-button{
@@ -130,20 +140,25 @@
 
 .content main div .container-outline{
     font-family: "Poppins";
-    background-color: transparent;
+    background-color: #567AE5;
     padding: 1rem 3.3rem;
     font-size: 1.6rem;
     line-height: 2.9rem;
-    color: var(--white);    
+    color: #ffffff;    
     display: none;
-    border: .2rem solid var(--buttonPrimary);
+    border: .2rem solid #567AE5;
     cursor: pointer;
     transition: all 1s;
+    border-radius: 1rem;
+}
+
+.content main div .container-outline .icon-button{
+    margin-right: 1rem;
 }
 
 .content main div .container-outline:hover{
     transition: all 1s;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 @media (min-width: 600px){
@@ -199,7 +214,7 @@
     }
     
     .content main h1{
-        font-size: 6.8rem;
+        font-size: 6.5rem;
         line-height: 7.4rem;
     }
     
@@ -215,6 +230,11 @@
         display: inline;
         margin-left: 1.5rem;
         transition: all 1s;
+    }
+
+    .content header img {
+        width: 12rem;
+        height: 8rem;
     }
 
 }

@@ -1,13 +1,11 @@
 import React from "react"
-import ReactDOM from 'react-dom'
 import './fonts/Poppins-Regular.ttf';
 import './fonts/Poppins-Medium.ttf';
 import './fonts/Poppins-Black.ttf';
 import './fonts/Poppins-SemiBold.ttf';
 import './fonts/Poppins-Bold.ttf';
 import './App.scss';
-import Logo from "./img/logo.svg"
-import Fantasmas from "./img/fantasmas.png"
+import Logo from "./img/logoLojinha.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faYoutube, faInstagram , faTwitter} from "@fortawesome/free-brands-svg-icons"
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -43,27 +41,21 @@ export default class App extends React.Component {
             <a href="https://www.youtube.com/channel/UCm5cgfZlVsyjE4SeUnAqF4w" alt="Youtube" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon className="icon" icon={faYoutube} /></a>
           </nav>
         </header>
-        <div className="image-mobile">
-          <img src={Fantasmas} alt="Fantasmas do Filme" />
-        </div>
         <div className="container" >
           <main>
-            <h2>HAYAO MIYAZAKI</h2>
-            <h1>A VIAGEM DE <br /> CHIHIRO</h1>
-            <p>Chihiro chega a um mundo mágico dominado por <br />
-              uma bruxa. Aqueles que a desobedecem são <br />
-              transformados em animais.
+            <h2>Melhor Canal</h2>
+            <h1>No Lojinha LTDA</h1>
+            <p>Falando sobre tudo que a gente curte, sem conhecimento técnico <br />
+              e muito pautado no achismo que nossas vidas são... <br />
+              Bora cara que eu tenho que acordar cedo amanha.
             </p>
             <div>
-              <button className="container-primary" onClick={()=> this.handleWatchNow(true)}><FontAwesomeIcon className="icon-button" icon={faPlay} /> Assistir agora</button>
-              <button className="container-outline" onClick={()=> this.handleWatchTrailer(true)}>Assista o trailer</button>
+              <button className="container-primary" onClick={()=> this.handleWatchNow(true)}><FontAwesomeIcon className="icon-button" icon={faPlay} /> Marvel vs DC</button>
+              <button className="container-outline" onClick={()=> this.handleWatchTrailer(true)}><FontAwesomeIcon className="icon-button" icon={faPlay} /> Vilões da Disney</button>
               <ModalVideo channel='youtube' autoplay isOpen={this.state.isWatchNow} videoId="-C-TkiHR59U" onClose={() => this.handleWatchNow(false)} />
               <ModalVideo channel='youtube' autoplay isOpen={this.state.isWatchTrailer} videoId="Ccb_zZ430Eo" onClose={() => this.handleWatchTrailer(false)} />
             </div>
           </main>
-          <div className="image-desktop">
-            <img src={Fantasmas} alt="Fantasmas do Filme" />
-          </div>
         </div>
       </div>
     );
