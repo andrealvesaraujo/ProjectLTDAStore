@@ -30,7 +30,6 @@
     padding: 3rem 2.5rem;
     font-size: 1.4rem;
     color: var(--white);
-    background: linear-gradient(154.76deg, var(--green), var(--darkblue));
     min-height: 100vh;
     background-image: url(./img/team.png);
     background-size: cover;
@@ -58,8 +57,8 @@
 }
 
 .content header nav a{
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: .5rem;
     border-radius: 3rem;
     display: flex;
@@ -77,35 +76,22 @@
     height: 2rem;
 }
 
-.content .image-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content .image-mobile img{
-    width: 30rem;
-}
-
-.content .image-desktop{
-    display: none;
-}
-
-
 .content main h2{
     font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.7rem;
     margin-bottom: .6rem;
+    filter: drop-shadow(2px 4px 6px black);
 
 }
 
 .content main h1{
     font-family: "Poppins-Bold";
     font-weight: 900;
-    font-size: 5.6rem;
-    line-height: 6.1rem;
+    font-size: 4rem;
+    line-height: 5.1rem;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .content main p {
@@ -114,19 +100,21 @@
     line-height: 2.5rem;
     margin-top: 1.5rem;
     margin-bottom: 6rem;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .content main div .container-primary{
     font-family: "Poppins";
-    background-color: var(--buttonPrimary);
+    background-color: var(--primary);
     padding: 1rem 3.3rem;
     font-size: 1.6rem;
     line-height: 2.9rem;
-    color: #ffffff;    
+    color: var(--white);  
     cursor: pointer;
-    border: 0.2rem solid var(--buttonPrimary);
+    border: 0.2rem solid var(--primary);
     transition: all 1s;
     border-radius: 1rem;
+    margin-right: 1.5rem;
 }
 
 .content main div .container-primary:hover{
@@ -140,16 +128,17 @@
 
 .content main div .container-outline{
     font-family: "Poppins";
-    background-color: #567AE5;
+    background-color: var(--secondary);
     padding: 1rem 3.3rem;
     font-size: 1.6rem;
     line-height: 2.9rem;
-    color: #ffffff;    
-    display: none;
-    border: .2rem solid #567AE5;
+    color: var(--white);
+    border: .2rem solid var(--secondary);
     cursor: pointer;
     transition: all 1s;
     border-radius: 1rem;
+    margin-top: 1.5rem;
+
 }
 
 .content main div .container-outline .icon-button{
@@ -161,7 +150,7 @@
     opacity: 0.8;
 }
 
-@media (min-width: 600px){
+@media (min-width: 768px){
     .content {
         padding: 3rem 10rem;
     }
@@ -172,7 +161,6 @@
         padding: 5.2rem 18rem;
     }
 
-    
     .content header {
         margin-bottom: 7.5rem;
     }
@@ -192,21 +180,6 @@
         grid-template-columns: auto auto;
     }
         
-    .content .image-desktop {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .content .image-desktop img{
-        width: 55rem;
-        height: 50rem;
-    }
-
-    .content .image-mobile{
-        display: none;
-    }
-    
     .content main h2{
         font-size: 2rem;
         line-height: 3rem;
@@ -228,7 +201,6 @@
 
     .content main div .container-outline{
         display: inline;
-        margin-left: 1.5rem;
         transition: all 1s;
     }
 
