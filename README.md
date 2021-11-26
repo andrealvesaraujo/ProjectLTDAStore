@@ -4,12 +4,18 @@ Fifth Dev Challenge of Codelândia: Movie Synopsis Page
 
 In this case, i'm adapting it to help my nerds friends youtube channel. It's called "No lojinha LTDA" : https://www.youtube.com/channel/UCm5cgfZlVsyjE4SeUnAqF4w
 
+In other branch there is my original layout(https://project-ltda-store-fi510x2o7-andrealvesaraujo.vercel.app/)
+
 ## Figma Prototype
 
 https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=5854%3A2
 
 ## Technologies :
 React, React Reveal, React FontAwesome, React Modal Video, Sass, Node.js
+
+## Access:
+
+https://project-ltda-store-andrealvesaraujo.vercel.app/
 
 ## Preview:
 
